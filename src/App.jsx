@@ -1,13 +1,15 @@
+import React from "react";
+import Body from "./components/Body";
 import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      {/* <h1 className="text-4xl font-bold text-blue-600">
-        Tailwind is working! 🎉
-      </h1> */}
-      <Header />
-    </div>
+    <>
+      <div className="bg-red-400">
+        <Header />
+        <Body />
+      </div>
+    </>
   );
 }
 
@@ -18,6 +20,6 @@ export default App;
 // - Sidebar
 //  -- Side items
 // - Main Container
-//  -- Button Categories
+//  -- Categories
 //  -- Video Container
-//    --- Video Card    
+//    --- Video Card
